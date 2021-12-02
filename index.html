@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">CRUD</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="">Create</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+
+    <!-- <div class="modall" id="modall-new">
+        <div class="modall-content">
+            <a href="#" class="modallClose" style="text-decoration: none;">&times;</a>
+            <h2 class="modall-heading">Add New</h2>
+            <form>
+                <input type="text" class="form-control" placeholder="Country">
+                <input type="text" class="form-control" placeholder="Capital">
+                <input type="email" class="form-control" placeholder="Email">
+                <input type="password" class="form-control" placeholder="Password">
+            </form>
+            <button class="btn btn-success" onclick="parent.location='#'" >Save</button>
+        </div>
+    </div> -->
+
+    <!-- ========================================================================= -->
+
+    <div class="main_area">
+        <h3>Countries and Capitals</h3>
+        <form class="inputForm" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <input type="text" class="form-control" id="countryName" placeholder="Country Name"/>
+            <input type="text" class="form-control" id="capitalName" placeholder="Capital Name"/>
+            <input type="submit" id="subbtn" class="btn btn-success" value="Submit"/>
+        </form>
+        <div class="table-div">
+            <table class="table" id="listTable">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Capital</th>
+                        <th>Operations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>001</td>
+                        <td>USA</td>
+                        <td>Washington D.C.</td>
+                        <td>
+                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-primary">Update</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Pakistan</td>
+                        <td>Islamabad</td>
+                        <td>
+                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-primary">Update</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>India</td>
+                        <td>New Dehli</td>
+                        <td>
+                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-primary">Update</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Nigeria</td>
+                        <td>Abuja</td>
+                        <td>
+                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-primary">Update</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Brazil</td>
+                        <td>Brasilia</td>
+                        <td>
+                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-primary">Update</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <td>Germany</td>
+                        <td>Berlin</td>
+                        <td>
+                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-primary">Update</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>007</td>
+                        <td>North Korea</td>
+                        <td>Pyongyang</td>
+                        <td>
+                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-primary">Update</button>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
